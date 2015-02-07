@@ -1,16 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
 header {
   height: 100vh;
   position: relative;
 
-  background: lightgray;
+  background: url(img/bkground.jpg) center / cover;
 }
 
 header > #logo {
-  width: 100px;
-  position: absolute;
-
-  left: 20px;
-  top: 20px;
+  padding: 25px;
+  width: 80px;
 }
 
 header > ul {
@@ -19,13 +18,18 @@ header > ul {
   right: 0;
   bottom: 0;
 
-  margin: 30px 0;
-  padding: 0 10vw;
+  margin: 0;
+  padding: 30px 10vw;
   text-align: center;
+
+  background: rgba(0, 0, 0, 0.25);
 }
 
 header > ul > li {
   display: inline-block;
   max-width: 100px;
   width: 20vw;
+
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
