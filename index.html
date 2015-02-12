@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html ng-app="appname">
   <head>
     <meta charset="UTF-8">
-    <title>Newnyang world</title>
+    <title>appname</title>
+    <base href="/">
     <link rel="stylesheet" type="text/css" href="lib/normalize.css/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
@@ -16,12 +17,10 @@
           ><p>Contact</p></li></ul
       >
     </aside>
-    <section>
-      <h1>Hello, world!</h1>
-      <p>Newnyang world</p>
-    </section>
-    <section>
-      <img src="res/obj-1.jpg">
-    </section>
+    <main ng-view></main>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
