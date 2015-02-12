@@ -1,34 +1,47 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
-header {
+* {
+  box-sizing: border-box;
+}
+
+body {
   height: 100vh;
-  position: relative;
+  margin: 0;
 
   background: url(res/bkground.jpg) center / cover;
 }
 
-header > #logo {
-  padding: 25px;
-  width: 80px;
-}
-
-header > ul {
+body > nav {
   position: absolute;
   left: 0;
-  right: 0;
+  top: 0;
   bottom: 0;
 
+  width: 60px;
   margin: 0;
-  padding: 30px 10vw;
   text-align: center;
 
   background: rgba(0, 0, 0, 0.25);
 }
 
-header > ul > li {
+body > nav > img {
+  padding: 10px;
+  width: 60px;
+}
+
+body > nav > ul {
+  margin: 0;
+  padding: 0;
+}
+
+body > nav > ul > li {
+  display: block;
+  margin: 20px 0;
+}
+
+body > nav > ul > li > p {
   display: inline-block;
-  max-width: 100px;
-  width: 20vw;
+  transform: rotate(-90deg);
 
   color: white;
   font-family: 'Raleway', sans-serif;
